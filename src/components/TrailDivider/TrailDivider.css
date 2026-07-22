@@ -1,0 +1,24 @@
+.trail-divider {
+  position: relative;
+  color: var(--color-leaf);
+  height: 40px;
+}
+
+.trail-divider__svg {
+  width: 100%;
+  height: 40px;
+}
+
+.trail-divider__label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg);
+  padding-inline: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}

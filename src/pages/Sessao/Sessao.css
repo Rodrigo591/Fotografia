@@ -1,0 +1,76 @@
+.sessao {
+  padding-top: 8rem;
+  padding-bottom: var(--space-section);
+  min-height: 70vh;
+}
+
+.sessao__voltar {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: var(--step-sm);
+  color: var(--color-forest-2);
+  margin-bottom: 2.5rem;
+}
+
+.sessao__voltar:hover {
+  color: var(--color-clay);
+}
+
+.sessao__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.sessao__header h1 {
+  font-size: var(--step-2xl);
+  margin-top: 0.5rem;
+}
+
+.sessao__local {
+  margin-top: 0.75rem;
+  color: var(--color-muted);
+}
+
+.sessao__exif {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--step-sm);
+  color: var(--color-forest-2);
+}
+
+.sessao__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.sessao-vazia {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  min-height: 60vh;
+}
+
+.sessao-vazia h1 {
+  font-size: var(--step-xl);
+  margin: 0.75rem 0 2rem;
+}
+
+@media (max-width: 860px) {
+  .sessao__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .sessao__grid {
+    grid-template-columns: 1fr;
+  }
+}

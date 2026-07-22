@@ -1,0 +1,102 @@
+.gallery-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery-item--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item__figure {
+  margin: 0;
+}
+
+.gallery-item__frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-item:hover .gallery-item__frame {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 30px -18px rgba(38, 51, 32, 0.45);
+}
+
+.gallery-item__frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.16), transparent 55%);
+  mix-blend-mode: overlay;
+}
+
+.gallery-item__category {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(38, 51, 32, 0.45);
+  backdrop-filter: blur(3px);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+}
+
+.gallery-item__view {
+  position: absolute;
+  left: 0.85rem;
+  bottom: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-item:hover .gallery-item__view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item__caption {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.gallery-item__caption h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.gallery-item__caption p {
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.gallery-item__exif {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-forest-2);
+  white-space: nowrap;
+}

@@ -1,0 +1,31 @@
+:root {
+  /* Cor — paleta "mata & estrada" */
+  --color-bg: #f2f5e9;          /* verde-claro quase creme, luz filtrada pela folhagem */
+  --color-surface: #fbfaf2;     /* superfície de cartão, papel claro */
+  --color-leaf: #a8c48a;        /* verde-claro principal — folha jovem */
+  --color-leaf-soft: #d7e4c4;   /* verde muito claro para fundos e divisores */
+  --color-forest: #35442c;      /* verde-mata escuro — texto, nav, contraste */
+  --color-forest-2: #4b5d3d;    /* variação para hover/estados */
+  --color-clay: #c98a4b;        /* terra/poeira de estrada — acento quente */
+  --color-text: #263320;        /* texto principal, quase preto-esverdeado */
+  --color-muted: #6b7a5e;       /* texto secundário */
+  --color-line: #cdd9b8;        /* linhas e bordas discretas */
+
+  /* Tipografia */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Work Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Escala */
+  --step-sm: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-base: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+  --step-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.6rem);
+  --step-xl: clamp(2rem, 1.6rem + 2vw, 3.2rem);
+  --step-2xl: clamp(2.8rem, 2rem + 4vw, 5.4rem);
+
+  /* Layout */
+  --content-width: 1180px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --space-section: clamp(4rem, 3rem + 5vw, 8rem);
+}

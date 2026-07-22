@@ -1,0 +1,35 @@
+.session-photo {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.session-photo--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.session-photo__frame {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.session-photo__frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.16), transparent 55%);
+  mix-blend-mode: overlay;
+}
+
+.session-photo__exif {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-forest-2);
+}
