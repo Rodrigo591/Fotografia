@@ -41,20 +41,18 @@
   cursor: pointer;
   transition: all 0.2s ease;
 
-  appearance: none;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .gallery__filter:hover {
   border-color: var(--color-leaf);
-  color: var(--color-forest);
+  background: var(--color-forest);
+  color: white;
 }
 
 .gallery__filter--active {
   background: var(--color-forest);
   border-color: var(--color-forest);
-  color: var(--color-leaf-soft);
+  color: white ; 
 }
 
 .gallery__grid {
