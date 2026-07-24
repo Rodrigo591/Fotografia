@@ -31,7 +31,7 @@
 .gallery__filter {
   background: transparent;
   border: 1px solid var(--color-line);
-  border-radius: 999px;
+  border-radius: 20px;
   padding: 0.5rem 1rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -40,6 +40,10 @@
   color: var(--color-muted);
   cursor: pointer;
   transition: all 0.2s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .gallery__filter:hover {
