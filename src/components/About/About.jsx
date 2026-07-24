@@ -8,11 +8,10 @@ export default function About() {
     <section id="sobre" className="about">
       <div className="container about__inner" ref={ref}>
         <div className={`about__portrait ${visible ? 'about__portrait--visible' : ''}`}>
-          <span className="about__portrait-tag">35mm · luz natural</span>
         </div>
 
         <div className={`about__text ${visible ? 'about__text--visible' : ''}`}>
-          <span className="eyebrow">Sobre</span>
+          <span>Por trás da câmera</span>
           <h2>Andar devagar, fotografar rápido.</h2>
           <p>
             Sou fotógrafa e passo mais tempo estradas afora do que em estúdio.

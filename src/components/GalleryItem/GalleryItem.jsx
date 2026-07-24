@@ -22,11 +22,6 @@ export default function GalleryItem({ session, index }) {
             <h3>{session.name}</h3>
             <p>{session.local}</p>
           </div>
-          <div className="gallery-item__exif">
-            <span>{session.aperture}</span>
-            <span>{session.iso}</span>
-            <span>{session.focal}</span>
-          </div>
         </figcaption>
       </figure>
     </Link>

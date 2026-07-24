@@ -14,7 +14,7 @@ export default function Sessao() {
       <>
         <Header />
         <main className="sessao-vazia container">
-          <span className="eyebrow">Ensaio não encontrado</span>
+          <span>Ensaio não encontrado</span>
           <h1>Essa trilha não existe (ainda).</h1>
           <Link to="/#galeria" className="button button--primary">
             Voltar para a galeria
@@ -36,14 +36,9 @@ export default function Sessao() {
 
           <div className="sessao__header">
             <div>
-              <span className="eyebrow">{session.type}</span>
+              <span>{session.type}</span>
               <h1>{session.name}</h1>
               <p className="sessao__local">{session.local}</p>
-            </div>
-            <div className="sessao__exif">
-              <span>{session.aperture}</span>
-              <span>{session.iso}</span>
-              <span>{session.focal}</span>
             </div>
           </div>
 

@@ -12,9 +12,6 @@ export default function SessionPhoto({ photo, index }) {
     >
       <div className="session-photo__frame" style={{ background: photo.gradient }} />
       <figcaption className="session-photo__exif">
-        <span>{photo.aperture}</span>
-        <span>{photo.iso}</span>
-        <span>{photo.focal}</span>
       </figcaption>
     </figure>
   )

@@ -56,23 +56,8 @@ button {
   scroll-margin-top: 6rem;
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: var(--step-sm);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-forest-2);
-}
 
-.eyebrow::before {
-  content: '';
-  width: 18px;
-  height: 1px;
-  background: var(--color-clay);
-}
+
 
 .button {
   display: inline-flex;

@@ -38,14 +38,6 @@
   color: var(--color-muted);
 }
 
-.sessao__exif {
-  display: flex;
-  gap: 1rem;
-  font-family: var(--font-mono);
-  font-size: var(--step-sm);
-  color: var(--color-forest-2);
-}
-
 .sessao__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

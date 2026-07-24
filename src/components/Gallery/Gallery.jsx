@@ -16,7 +16,7 @@ export default function Gallery() {
       <div className="container">
         <div className="gallery__header">
           <div>
-            <span className="eyebrow">Galeria</span>
+            <span> Galeria </span>
             <h2 className="gallery__title">Pessoas que já fotografei</h2>
             <p className="gallery__hint">Clique em um ensaio para ver a página completa.</p>
           </div>

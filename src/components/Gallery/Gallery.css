@@ -59,9 +59,7 @@
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.gallery__grid > *:nth-child(3n + 2) {
-  margin-top: clamp(1.5rem, 4vw, 3rem);
-}
+
 
 @media (max-width: 860px) {
   .gallery__grid {
